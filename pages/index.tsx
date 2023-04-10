@@ -66,7 +66,7 @@ export default function Modal() {
                     </h3>
                     <button
                       className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                      onClick={() => setShowModal(false)}
+                      onClick={() => { setShowModal(false); setSampleIdState(""); }}
                     >
                       <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                         ×
@@ -91,12 +91,12 @@ export default function Modal() {
                     <button
                       className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                       type="button"
-                      onClick={() => setShowModal(false)}
+                      onClick={() => { setShowModal(false); setSampleIdState(""); }}
                     >
                       Close
                     </button>
                     <Button
-                      onClick={() => getSampleID}
+                      onClick={getSampleID}
                     >
                       Get Sample ID
                     </Button>

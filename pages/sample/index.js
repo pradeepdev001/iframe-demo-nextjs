@@ -3,13 +3,13 @@ import Link from "next/link";
 export default function Sample() {
   return (
     <>
-      <div class="not-found-section">
-        <h1 class="error">Hi!</h1>
-        <div class="page">
+      <div className="not-found-section">
+        <h1 className="error">Hi!</h1>
+        <div className="page">
           Welcome to Sample Page
         </div>
 
-        <div class="page">
+        <div className="page">
           Sample ID: <span id="sample_id">JYSS989SPKS</span>
         </div>
        
